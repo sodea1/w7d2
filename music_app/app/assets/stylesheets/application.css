@@ -15,7 +15,7 @@
  */
 
 
-h1 {
+h1, h2, h3, h4 {
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
@@ -28,6 +28,6 @@ form, a {
 }
 
 input[type="submit"] {
-    background-color: grey;
+    background-color: aqua;
     border-radius: 4px;
 }

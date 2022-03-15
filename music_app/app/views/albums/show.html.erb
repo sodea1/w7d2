@@ -1,0 +1,29 @@
+
+<h2><%= @album.title %></h2>
+
+<div>no tracks to display yo</div>
+
+<h4>Links</h4>
+
+    <form action="<%= edit_album_url(@album) %>" method="get">
+        <input type="submit" value="Edit Album">
+
+    </form>
+
+    <form action="<%= albums_url(@album) %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Destroy Album">
+    </form>
+
+        <form action="<%= edit_album_url(@album) %>">
+        <input type="submit" value="Edit Album">
+
+    </form>
+
+     </form>
+
+        <form action="<%= band_url(@album.band_id) %>">
+        <input type="submit" value="Back to Band">
+
+    </form>
+    

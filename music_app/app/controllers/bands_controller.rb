@@ -21,6 +21,7 @@ class BandsController < ApplicationController
             redirect_to band_url(@band)
         else
             flash.now[:errors] = @band.errors.full_messages
+            redirect_to new_band_url
         end
     end
 
@@ -36,6 +37,7 @@ class BandsController < ApplicationController
             redirect_to bands_url
         else
             flash.now[:errors] = @band.errors.full_messages
+            redirect_to edit_band_url
         end
     end
 
