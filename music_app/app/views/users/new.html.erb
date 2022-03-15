@@ -1,0 +1,15 @@
+<h1>Sign Up Here</h1>
+
+<form action="<%= users_url(@user) %>" method="post">
+
+    <label for="user_email">Email:</label>
+    <input type="text" name="user[email]" id="user_email">
+    <br>
+
+    <label for="user_password">Password (minimum 6 characters):</label>
+    <input type="password" name="user[password]">
+    <br>
+
+    <input type="submit" value="Sign Up">
+
+</form>

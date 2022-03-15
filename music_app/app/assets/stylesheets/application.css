@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+
+h1 {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+form, a {
+    display: flex;
+    justify-content: right;
+    margin-right: 100px;
+}
+
+input[type="submit"] {
+    background-color: grey;
+    border-radius: 4px;
+}
