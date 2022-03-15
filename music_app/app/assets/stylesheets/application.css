@@ -24,8 +24,7 @@ h1 {
 
 form, a {
     display: flex;
-    justify-content: right;
-    margin-right: 100px;
+    justify-content: center;
 }
 
 input[type="submit"] {

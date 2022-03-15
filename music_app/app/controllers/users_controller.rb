@@ -5,7 +5,6 @@ class UsersController < ApplicationController
     end
 
     def show
-        debugger
         @user = User.find(params[:id])
         render :show
     end
@@ -17,7 +16,7 @@ class UsersController < ApplicationController
             login(@user)
             redirect_to user_url(@user)
         else
-            flash[:errors] << "Invalid username or password"
+            flash[:errors] = ["Invalid username or password"]
         end
     end
 

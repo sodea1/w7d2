@@ -1,0 +1,13 @@
+<h1>EDIT <%= @band.name.upcase %></h1>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>
+            <form action="<%= band_url(@band) %>" method="get">
+                <input type="text" name="band[name]" value="<%= @band.name %>">
+            </form>
+        </td>
+    </tr>
+
+</table>
